@@ -1,5 +1,6 @@
 # BasicNumbers.java
 A short grasp on numbers
+
 import java.util.Scanner;
 
 public class LoveJava
