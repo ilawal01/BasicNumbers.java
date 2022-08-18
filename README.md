@@ -1,4 +1,4 @@
-# BasicNumbers.java
+# LoveJava.java
 A short grasp on numbers
 
 import java.util.Scanner;
