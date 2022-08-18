@@ -1,26 +1,51 @@
-# LoveJava.java
-A short grasp on numbers
-import java.util.Scanner;
+# BasicNumbers.java
 
-public class LoveJava
+import java.util.Scanner; // Needed for Scanner class
+
+public class RomanNumerals
 {
    public static void main(String[] args)
    {
-      Scanner keyboard = new Scanner (System.in);
-      int valid = 0;
-      int number = 0;
-      while  (valid == 0)
+      int number; // A number entered by the user
+      
+      Scanner keyboard= new Scanner(System.in);
+      System.out.print("Enter a number from 1 to 10: ");
+      number = keyboard.nextInt();
+      
+      switch (number)
       {
-         System.out.println("Please enter a number from 10 to 24: ");
-         number = keyboard.nextInt(); 
-         System.out.println(" " + number + " ");
-         if  (number >= 10 && number <=24) 
-         {
-            System.out.println("That is a valid number.");
-            valid++;
-         }
-         else
-         System.out.print("This number is not a valid number. ") ;
+         case 1:
+         System.out.println("I"); 
+         break;
+         case 2:
+         System.out.println("II");
+         break;
+         case 3:
+         System.out.println("III");
+         break;
+         case 4:
+         System.out.println("IV");
+         break;
+         case 5:
+         System.out.println("V"); 
+         break;
+         case 6:
+         System.out.println("VI"); 
+         break;
+         case 7:
+         System.out.println("VII"); 
+         break;
+         case 8:
+         System.out.println("VIII"); 
+         break;
+         case 9:
+         System.out.println("IX"); 
+         break;
+         case 10:
+         System.out.println("X"); 
+         break;
+         default:
+         System.out.println("An Error occured. Please enter a number from 1 to 10.");
       }
    }
 }
